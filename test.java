@@ -2,22 +2,38 @@ import java.util.Scanner;
 import java.lang.Math;
   
 class test{
+	
 	 public static void main(String[] args){
+		 int[] x=new int[5];
+		 
+		 
+		 Scanner sc =new Scanner(System.in);
+		 System.out.println("enter array 5 digit  ");
+		 		 for(int i=0;i<5;i++){
+			 x[i]=sc.nextInt();
+		 
+		 }
+System.out.println("enter the element you want to search");
+		 
+		 int num=sc.nextInt();
 		
-		Scanner sc =new Scanner(System.in);
-		System.out.println("enter your octal :- ");
-		double num=sc.nextDouble();
-	    int counter=0;
-		int decimal=0;
-		while(num>0){
-			 double temp=num%10;
-			 decimal+=temp*Math.pow(8,counter);
-					
-			num=num/10;
-		counter++;
-					
-	}
-		System.out.println(decimal);
+		 for(int i=0;i<5;i++){
+			 if(num==x[i]){
+				 System.out.println("index:-"+i);
+				 
+				 
+			 }
+				 
 		
+		 }
+		 
+		 
+
+		 
+		 
+		 
+		 
+		
+	
 	}
 }
